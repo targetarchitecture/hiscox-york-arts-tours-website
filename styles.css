@@ -179,25 +179,25 @@ html.js .stagger.in > *:nth-child(n+6) { opacity: 1; transform: none; transition
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background-image: url('assets/exterior-1400.jpg');
-  background-size: cover; background-position: center 40%;
+  background-image: url('assets/exterior-1600.jpg');
+  background-size: cover; background-position: center 55%;
   transform: scale(1.04); transition: transform 8s ease-out;
 }
 .hero-bg.loaded { transform: scale(1); }
 @media (min-width: 1200px) {
-  .hero-bg { background-image: url('assets/exterior-2400.jpg'); }
+  .hero-bg { background-image: url('assets/exterior-2560.jpg'); }
 }
 @media (max-width: 600px) {
-  .hero-bg { background-image: url('assets/exterior-900.jpg'); }
+  .hero-bg { background-image: url('assets/exterior-960.jpg'); background-position: 38% 55%; }
 }
 .hero-overlay {
   position: absolute; inset: 0;
   background: linear-gradient(
     to top,
-    rgba(14,12,9,.96)  0%,
-    rgba(14,12,9,.80)  28%,
-    rgba(14,12,9,.40)  58%,
-    rgba(14,12,9,.10)  100%
+    rgba(10,8,5,.95)   0%,
+    rgba(10,8,5,.75)   25%,
+    rgba(10,8,5,.25)   55%,
+    rgba(10,8,5,.03)   100%
   );
 }
 .hero-inner {
@@ -426,3 +426,71 @@ html.js .stagger.in > *:nth-child(n+6) { opacity: 1; transform: none; transition
 }
 .on-dark .notice { border-color: var(--line); color: var(--warm-2); }
 .notice-icon { flex-shrink: 0; width: 18px; height: 18px; color: var(--gold); margin-top: 1px; }
+
+
+.next-tours-label {
+  font-family: var(--font-label);
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  gap: .6em;
+}
+
+.next-tours-banner {
+  background: #b8860b;          /* dark goldenrod — adjust to match your amber */
+  color: #fff;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.next-tours-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* .next-tours-label {
+  display: block;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 0.2rem;
+} */
+
+.next-tours-when {
+    font-family: var(--font-label);
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.next-tours-charity {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.92;
+}
+
+.next-tours-book {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.65rem 1.75rem;
+  background: #fff;
+  color: #b8860b;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s;
+}
+
+.next-tours-book:hover {
+  opacity: 0.85;
+}
