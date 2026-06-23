@@ -13,6 +13,7 @@ $page        = $page        ?? '';
 $nav = [
     'home'       => ['index.php',      'Home'],
     'video'      => ['video.php',      'Film'],
+    'Newsletter' => ['newsletter.php', 'Newsletter'],
    /* 'visit'      => ['visit.php',      'Plan Your Tour'],    */
 ];
 
@@ -57,7 +58,6 @@ function navClass(string $key, string $current): string {
       <a href="<?= $href ?>"<?= navClass($key, $page) ?>><?= htmlspecialchars($label) ?></a>
 <?php endforeach; ?>
     </nav>
-          <!-- <a href="visit.html#book" class="btn btn--gold btn--sm">Book your place</a> -->
            <a href="https://www.ticketsource.com/hiscox-arts-tours" target="_blank" class="btn btn--gold btn--sm">Book your place</a>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">
       <span></span><span></span><span></span>

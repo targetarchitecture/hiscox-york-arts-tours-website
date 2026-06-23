@@ -53,7 +53,7 @@ require 'includes/header.php';
       <span class="next-tours-when">Saturday 1<sup>st</sup> &amp; Sunday 2<sup>nd</sup> August 2026</span>
     </div>
     <p class="next-tours-when">
-      This year's tours raising money for <strong>Guide Dogs UK</strong> 
+      This year's tours raising money for <strong>Guide&nbsp;Dogs&nbsp;UK</strong> 
     </p>
     <a href="https://www.ticketsource.com/hiscox-arts-tours" target="_blank" class="btn btn--gold btn--sm">Book your place</a>
   </div>
@@ -166,6 +166,9 @@ require 'includes/header.php';
     </div>
   </div>
 </section> -->
+
+
+<?php require 'includes/mailchimp.php'; ?>
 
 </main>
 
