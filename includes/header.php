@@ -13,7 +13,7 @@ $page        = $page        ?? '';
 $nav = [
     'home'       => ['index.php',      'Home'],
     'video'      => ['video.php',      'Film'],
-    'Newsletter' => ['newsletter.php', 'Newsletter'],
+    'newsletter' => ['newsletter.php', 'Newsletter'],
    /* 'visit'      => ['visit.php',      'Plan Your Tour'],    */
 ];
 

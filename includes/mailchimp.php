@@ -4,8 +4,8 @@
   <div class="container">
     <div style="max-width:600px;margin-bottom:52px;" class="reveal">
       <p class="label">Stay Informed</p>
-      <h2 style="font-family:var(--font-head);font-size:clamp(1.9rem,3.4vw,2.6rem);margin-top:.5em;">Join our mailing list</h2>
-              <p style="color:var(--warm-2);margin-top:14px;">Join our mailing list to receive updates about the tours and the collection.</p>
+      <h2 style="font-family:var(--font-head);font-size:clamp(1.9rem,3.4vw,2.6rem);margin-top:.5em;">Subscribe to Our Newsletter</h2>
+              <p style="color:var(--warm-2);margin-top:14px;">Join our newsletter to receive updates about the tours and the collection.</p>
     </div>
 
 <div id="mc_embed_shell">
