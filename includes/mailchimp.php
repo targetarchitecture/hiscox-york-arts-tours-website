@@ -14,7 +14,7 @@
          #mc_embed_signup
          {
             background:var(--gold); 
-            width: 600px;
+            width: 400px;
             margin: 0 auto; /* Centers the block container horizontally */
             color: var(--black); /* Fixed invalid property 'font-color' to 'color' */
             font-family: var(--font-display);
