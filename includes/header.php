@@ -14,7 +14,7 @@ $nav = [
     'home'       => ['index.php',      'Home',  '_self'],
     'video'      => ['video.php',      'Film',  '_self'],
     'newsletter' => ['newsletter.php', 'Newsletter', '_self'],
-    'visit'      => ['https://www.ticketsource.com/hiscox-arts-tours',      'Book Your Place', '_blank'],    
+    // 'visit'      => ['https://www.ticketsource.com/hiscox-arts-tours',      'Book Your Place', '_blank'],    
 ];
 
 function navClass(string $key, string $current): string {

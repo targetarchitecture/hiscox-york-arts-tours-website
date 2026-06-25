@@ -168,7 +168,8 @@ html.js .stagger.in > *:nth-child(n+6) { opacity: 1; transform: none; transition
   .site-nav.open { transform: translateX(0); }
   .site-nav .btn--sm { display: flex; }
   .nav-toggle { display: flex; }
-  .header-inner .btn--sm { display: none; }
+  /* .header-inner .btn--sm { display: none; } */ /* ← this is hiding the button */
+  .header-inner .btn--sm { display: inline-flex; }
 }
 
 /* ── hero ── */
