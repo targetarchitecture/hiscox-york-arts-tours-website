@@ -11,10 +11,10 @@ $description = $description ?? 'Volunteer-led guided tours of the Hiscox art col
 $page        = $page        ?? '';
 
 $nav = [
-    'home'       => ['index.php',      'Home'],
-    'video'      => ['video.php',      'Film'],
-    'newsletter' => ['newsletter.php', 'Newsletter'],
-   /* 'visit'      => ['visit.php',      'Plan Your Tour'],    */
+    'home'       => ['index.php',      'Home',  '_self'],
+    'video'      => ['video.php',      'Film',  '_self'],
+    'newsletter' => ['newsletter.php', 'Newsletter', '_self'],
+    'visit'      => ['https://www.ticketsource.com/hiscox-arts-tours',      'Book Your Place', '_blank'],    
 ];
 
 function navClass(string $key, string $current): string {
@@ -46,19 +46,18 @@ function navClass(string $key, string $current): string {
 
 <header class="site-header" id="siteHeader">
   <div class="header-inner">
-    <a class="brand" href="index.php">
-
-      <img src="assets/profile.jpg" height="34" />
-
-      <span class="brand-name">Hiscox York Arts Tours</br>RAISING MONEY FOR YORK CHARITIES</span>
-
+    <a class="brand" href="/">
+      <img src="assets/logo.svg" height="30" />
+      <span class="brand-name">Hiscox York Arts Tours</br>RAISING MONEY FOR YORK CHARITIES</span>   
     </a>
+      <a href="https://www.ticketsource.com/hiscox-arts-tours" target="_blank" class="brand btn btn--gold btn--sm">Book your place</a>
     <nav class="site-nav" id="siteNav" role="navigation" aria-label="Main navigation">
-<?php foreach ($nav as $key => [$href, $label]): ?>
-      <a href="<?= $href ?>"<?= navClass($key, $page) ?>><?= htmlspecialchars($label) ?></a>
+<?php foreach ($nav as $key => [$href, $label, $target]): ?>
+      <a href="<?= $href ?>"<?= navClass($key, $page) ?> target="<?= $target ?>"><?= htmlspecialchars($label) ?></a>
 <?php endforeach; ?>
+
     </nav>
-           <a href="https://www.ticketsource.com/hiscox-arts-tours" target="_blank" class="btn btn--gold btn--sm">Book your place</a>
+           <!-- <a href="https://www.ticketsource.com/hiscox-arts-tours" target="_blank" class="btn btn--gold btn--sm">Book your place</a> -->
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">
       <span></span><span></span><span></span>
     </button>
