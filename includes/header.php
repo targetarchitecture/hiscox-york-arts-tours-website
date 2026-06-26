@@ -48,7 +48,8 @@ function navClass(string $key, string $current): string {
   <div class="header-inner">
     <a class="brand" href="/">
       <img src="assets/logo.svg" height="30" />
-      <span class="brand-name">Hiscox York Arts Tours</br>RAISING MONEY FOR YORK CHARITIES</span>   
+      <!-- <span class="brand-name">Hiscox York Arts Tours</br>RAISING MONEY FOR YORK CHARITIES</span>   -->
+          <span class="brand-name">RAISING MONEY FOR YORK CHARITIES</span>   
     </a>
       <a href="https://www.ticketsource.com/hiscox-arts-tours" target="_blank" class="brand btn btn--gold btn--sm">Book your place</a>
     <nav class="site-nav" id="siteNav" role="navigation" aria-label="Main navigation">

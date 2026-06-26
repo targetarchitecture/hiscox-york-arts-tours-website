@@ -69,10 +69,37 @@ require 'includes/header.php';
   </div>
 </section>
 
+<!-- PHOTO GALLERY -->
+<section class="section on-dark-2">
+  <div class="container">
+    <div class="demo-wrapper">
+      <p class="label">Photo Gallery</p>
+      <div class="carousel-wrapper">
+      <?php
+          /*
+           * ── Include the carousel ─────────────────────────────────────────────
+           * Set these two variables before including to control which folder
+           * and JSON manifest are used.
+           *
+           * $carousel_folder  : path to your images folder, relative to this file
+           * $carousel_json    : filename of the JSON manifest inside that folder
+           * $carousel_interval: milliseconds between auto-advances (0 = disabled)
+           */
+          $carousel_folder   = 'carousel';
+          $carousel_json     = 'carousel.json';
+          $carousel_interval = 10000;    // 10 seconds
+
+          include 'includes/carousel.php';
+      ?>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FEATURED ARTISTS -->
 <section class="section on-dark">
   <div class="container">
-    <div style="max-width:600px;margin-bottom:52px;" class="reveal">
+    <div style="max-width:600px;margin-bottom:5px;" class="reveal">
       <p class="label">The collection</p>
       <h2 style="font-family:var(--font-head);font-size:clamp(1.9rem,3.4vw,2.6rem);margin-top:.5em;">Over 25 artists — local, national and international</h2>
       <p style="color:var(--warm-2);margin-top:14px;">Here are six of the works you'll encounter on a tour. 
