@@ -87,7 +87,7 @@ require 'includes/header.php';
            */
           $carousel_folder   = 'carousel';
           $carousel_json     = 'carousel.json';
-          $carousel_interval = 10000;    // 10 seconds
+          $carousel_interval = 5000;    // 5 seconds
 
           include 'includes/carousel.php';
       ?>
