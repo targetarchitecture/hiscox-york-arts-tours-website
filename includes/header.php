@@ -2,7 +2,7 @@
 /**
  * includes/header.php
  * Shared page header. Expects these variables to be set by the including page:
- *   $page        — string key: 'home' | 'video' | 'visit'
+ *   $page        — string key: 'home' | 'film' | 'info' | 'newsletter'
  *   $title       — <title> tag content
  *   $description — <meta description> content
  */
@@ -11,10 +11,11 @@ $description = $description ?? 'Volunteer-led guided tours of the Hiscox art col
 $page        = $page        ?? '';
 
 $nav = [
-    'home'       => ['index.php',      'Home',  '_self'],
-    'video'      => ['video.php',      'Film',  '_self'],
-    'newsletter' => ['newsletter.php', 'Newsletter', '_self'],
-    // 'visit'      => ['https://www.ticketsource.com/hiscox-arts-tours',      'Book Your Place', '_blank'],    
+    'home'       => ['/',      'Home',  '_self'],
+    'film'      => ['/film/',      'Film',  '_self'],
+    'info'       => ['/info/',      'Information', '_self'],    
+    'newsletter' => ['/newsletter/', 'Newsletter', '_self'],
+
 ];
 
 function navClass(string $key, string $current): string {
@@ -31,7 +32,7 @@ function navClass(string $key, string $current): string {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,wght@0,400;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/styles.css">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HH7E8X5S3D"></script>
@@ -47,7 +48,7 @@ function navClass(string $key, string $current): string {
 <header class="site-header" id="siteHeader">
   <div class="header-inner">
     <a class="brand" href="/">
-      <img src="assets/logo.svg" height="30" />
+      <img src="/assets/logo.svg" height="30" />
       <!-- <span class="brand-name">Hiscox York Arts Tours</br>RAISING MONEY FOR YORK CHARITIES</span>   -->
           <span class="brand-name">RAISING MONEY FOR YORK CHARITIES</span>   
     </a>

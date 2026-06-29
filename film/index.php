@@ -2,12 +2,12 @@
 $page        = 'video';
 $title       = 'Watch the Film — Hiscox York Arts Tours';
 $description = 'Watch our short film about the Hiscox York Arts Tours — a guided tour of one of York\'s finest private art collections.';
-require 'includes/header.php';
+require '../includes/header.php';
 ?>
 
 <style>
   .video-hero { position:relative; padding-top:88px; padding-bottom:0; overflow:hidden; }
-  .video-hero-bg { position:absolute; inset:0; background-image:url('assets/exterior-1600.jpg'); background-size:cover; background-position:center 40%; filter:brightness(.38) saturate(.8); }
+  .video-hero-bg { position:absolute; inset:0; background-image:url('/assets/exterior-1600.jpg'); background-size:cover; background-position:center 40%; filter:brightness(.38) saturate(.8); }
   .video-hero-inner { position:relative; z-index:2; max-width:var(--maxw); margin-inline:auto; padding:60px 28px 0; }
   .video-hero h1 { font-family:var(--font-head); font-size:clamp(2rem,4vw,3.2rem); color:var(--warm); }
   .video-hero p { color:var(--warm-2); max-width:58ch; margin-top:14px; font-size:1.08rem; }
@@ -46,7 +46,7 @@ require 'includes/header.php';
 <section class="on-dark" style="padding-bottom:0;">
   <div class="video-lift">
     <div class="video-facade" id="videoFacade" role="button" tabindex="0" aria-label="Play: Hiscox York Arts Tours film">
-      <img src="assets/YT Thumbnail.webp" alt="Hiscox York Arts Tours &mdash; film thumbnail" loading="lazy">
+      <img src="/assets/YT Thumbnail.webp" alt="Hiscox York Arts Tours &mdash; film thumbnail" loading="lazy">
       <div class="play-btn">
         <div class="play-circle">
           <svg viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>
@@ -56,19 +56,11 @@ require 'includes/header.php';
       <iframe title="Hiscox York Arts Tours &mdash; short film" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <div class="video-frame-border" aria-hidden="true"></div>
     </div>
-    <!-- <div class="video-meta">
-      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-left:auto;">
-        <a href="https://www.youtube.com/watch?v=fps2cGSoSgI" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.5 5 12 5 12 5s-4.5 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.5 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l5.5 3-5.5 3z"/></svg>
-          Watch on YouTube
-        </a>
-        <a href="visit.php#book" class="btn btn--gold btn--sm">Book your place</a>
-      </div>
-    </div> -->
+
   </div>
 </section>
 
 
 </main>
 
-<?php require 'includes/footer.php'; ?>
+<?php require '../includes/footer.php'; ?>
